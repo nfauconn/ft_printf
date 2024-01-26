@@ -6,7 +6,7 @@
 #    By: nfauconn <nfauconn@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/03 21:07:04 by nfauconn          #+#    #+#              #
-#    Updated: 2024/01/25 17:03:48 by nfauconn         ###   ########.fr        #
+#    Updated: 2024/01/26 14:22:25 by nfauconn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRCS_LIBFT		= \
 					./libft/ft_strdup.c\
 					./libft/ft_strfdup.c\
 					./libft/ft_strfjoin.c\
+					./libft/ft_strncmp.c\
 					./libft/ft_nbrlen_base.c\
 					./libft/ft_ulltoa_base.c\
 					./libft/ft_itoa.c\

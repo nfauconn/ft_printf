@@ -7,6 +7,10 @@
 
 Recoder `printf()`.
 
+## 🚀 Utilisation 🚀
+
+
+
 ## 💡 Apprentissage 💡
 
 ### 🌐 Langage : C 🌐
@@ -21,7 +25,7 @@ Recoder `printf()`.
 
 ### 🔧 Pratiques et outils de développement 🔧
 
-- **Création de Makefile :** Compiler des fichiers source, incluant une bibliothèque statique personnalisée (libft), et générer a partir de ceux-ci une librairie statique.
+- **Création de Makefile :** Compiler des fichiers source, et générer a partir de ceux-ci une librairie statique.
 
 - **Structuration et extensibilité du code :** Écrire un code bien structuré et extensible, crucial pour la maintenance et l'évolutivité des projets logiciels.
 
@@ -33,7 +37,7 @@ Recoder `printf()`.
 
 ## 📋 Sujet 📋
 
-Projet solo
+Projet individuel
 
 ### Instructions communes
 
@@ -42,7 +46,7 @@ Projet solo
 - **Fonctionnalité :** Vos fonctions ne doivent pas se terminer de manière inattendue (segmentation fault, bus error, double free, etc.), sauf pour les comportements indéfinis.
 - **Gestion de la mémoire :** Tout espace mémoire alloué sur le tas doit être correctement libéré. Les fuites de mémoire ne seront pas tolérées.
 - **Makefile :** Si nécessaire, soumettez un Makefile qui compile vos fichiers source vers la sortie requise avec les drapeaux `-Wall`, `-Wextra`, et `-Werror`. Il ne doit pas relier.
-- **Soumission :** Soumettez votre travail à votre dépôt git assigné. Seul le travail dans le dépôt git sera noté.
+- **Soumission :** Soumettez votre travail à votre repo git assigné. Seul le travail dans le repo git sera noté.
 
 ### Partie obligatoire
 
@@ -55,10 +59,9 @@ Projet solo
 
 **Exigences :**
 
-- Ne pas implémenter la gestion du tampon de la `printf()` originale.
 - Comparer votre fonction à la `printf()` originale.
 - Utiliser la commande `ar` pour créer votre bibliothèque. L'utilisation de la commande `libtool` est interdite.
-- Votre `libftprintf.a` doit être créée à la racine de votre dépôt.
+- Votre `libftprintf.a` doit être créée à la racine de votre repo.
 
 **Conversions à implémenter :**
 
@@ -85,4 +88,4 @@ Vous n'êtes pas obligé de compléter tous les bonus. Cependant, si vous prévo
 
 ### Soumission et évaluation par les pairs
 
-Soumettez votre devoir dans votre dépôt Git comme d'habitude. Assurez-vous que les noms de vos fichiers sont corrects. Après avoir réussi ce devoir, vous pouvez ajouter votre `ft_printf()` à votre `libft` pour une utilisation dans vos futurs projets C. Seul le travail à l'intérieur de votre dépôt sera évalué lors de la défense.
+Soumettez votre devoir dans votre repo Git comme d'habitude. Assurez-vous que les noms de vos fichiers sont corrects. Après avoir réussi ce devoir, vous pouvez ajouter votre `ft_printf()` à votre `libft` pour une utilisation dans vos futurs projets C. Seul le travail à l'intérieur de votre repo sera évalué.

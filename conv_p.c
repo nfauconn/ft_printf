@@ -6,7 +6,7 @@
 /*   By: nfauconn <nfauconn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 22:50:29 by nfauconn          #+#    #+#             */
-/*   Updated: 2024/01/25 16:57:36 by nfauconn         ###   ########.fr       */
+/*   Updated: 2024/01/26 14:23:00 by nfauconn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,11 @@ void			conv_p(va_list *ap, t_conv *conv)
 	tmp = ft_ulltoa_base((t_ull)i, 16, 0);
 	ft_strfjoin(&str, tmp);
 	free(tmp);
+	if (ft_strncmp(str, "0x0", ft_strlen(str)) == 0)
+	{
+		free(str);
+		str = ft_strdup("(nil)");
+	}
 	conv->len = ft_strlen(str);
 	to_copy = conv->len;
 	fill_width(conv, &to_copy);

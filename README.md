@@ -5,7 +5,14 @@
 
 ## 🏁 Goal 🏁
 
-Recode `printf()`.
+Custom implementation of `printf()`.
+
+## 🚀 Usage 🚀
+
+``` shell
+> make
+> 
+```
 
 ## 💡 Learning 💡
 
@@ -21,7 +28,7 @@ Recode `printf()`.
 
 ### 🔧 Development Practices and Tools 🔧
 
-- **Makefile Creation:** Compile source files, including a static custom library (libft), into the required static library
+- **Makefile Creation:** Compile source files, into the required static library
 
 - **Code Structuring and Extensibility:** Writing well-structured and extensible code, which is crucial for the maintenance and scalability of software projects.
 
@@ -33,7 +40,7 @@ Recode `printf()`.
 
 ## 📋 Subject 📋
 
-Projet solo
+Solo project
 
 ### Common Instructions
 
@@ -71,7 +78,7 @@ Projet solo
 - `%X` Prints a number in hexadecimal (base 16) uppercase format.
 - `%%` Prints a percent sign.
 
-## Bonus Part
+### Bonus Part
 
 You are not required to complete all the bonuses. However, if you plan to attempt the bonus part, consider the implementation of your extra features from the start to avoid pitfalls.
 

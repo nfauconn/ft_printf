@@ -6,7 +6,7 @@
 /*   By: nfauconn <nfauconn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 22:58:14 by nfauconn          #+#    #+#             */
-/*   Updated: 2024/01/25 16:57:23 by nfauconn         ###   ########.fr       */
+/*   Updated: 2024/01/26 13:50:54 by nfauconn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void		conv_x(va_list *ap, t_conv *conv)
 		conv_p(ap, conv);
 		return ;
 	}
-	i = (unsigned int)va_arg(*ap, void*);
+	i = (unsigned int)va_arg(*ap, unsigned int);
 	nb_to_array(conv, &str, &i);
 	conv->len = ft_strlen(str);
 	if (i != 0 && (conv->prec <= conv->len) && (conv->width <= (conv->len)))

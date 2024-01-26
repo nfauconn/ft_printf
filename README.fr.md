@@ -33,6 +33,8 @@ Recoder `printf()`.
 
 ## 📋 Sujet 📋
 
+Projet solo
+
 ### Instructions communes
 
 - **Langage :** Votre projet doit être écrit en C.

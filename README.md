@@ -33,6 +33,8 @@ Recode `printf()`.
 
 ## 📋 Subject 📋
 
+Projet solo
+
 ### Common Instructions
 
 - **Language:** Your project must be written in C.

@@ -9,18 +9,11 @@ Recoder `printf()`.
 
 ## 🚀 Utilisation 🚀
 
-### Tests
-
 ```shell
 > make
 > cc main.c libftprintf.a
 > ./a.out
 ```
-
-### Utilisation
-
-- Placez les sources de votre projet dans un répertoire nommé "ft_printf" et utilisez la commande `make -C ft_printf` dans votre Makefile principal.
-- Utilisez-le comme lors des tests mais avec vos propres fichiers à la place.
 
 ## 💡 Apprentissage 💡
 

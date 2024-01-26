@@ -11,7 +11,8 @@ Custom implementation of `printf()`.
 
 ``` shell
 > make
-> 
+> cc main.c libftprintf.a
+> ./a.out
 ```
 
 ## 💡 Learning 💡

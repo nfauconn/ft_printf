@@ -9,11 +9,17 @@ Custom implementation of `printf()`.
 
 ## 🚀 Usage 🚀
 
+### Testing
+
 ``` shell
 > make
 > cc main.c libftprintf.a
 > ./a.out
 ```
+
+### Using
+
+Put the sources in your project in a repository "ft_printf" and use `make -C ft_printf` in you main Makefile.
 
 ## 💡 Learning 💡
 

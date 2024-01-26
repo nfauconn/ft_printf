@@ -17,10 +17,11 @@ Custom implementation of `printf()`.
 > ./a.out
 ```
 
-### Using
+### Usage
 
-- Put the sources in your project in a repository "ft_printf" and use `make -C ft_printf` in you main Makefile.
-- Use it as in testing mode but with your files instead.
+2 possibilities:
+- Place the source files of your project in a directory named "ft_printf" and use the command `make -C ft_printf` in your main Makefile.
+- Use it as it is mentioned in the testing phase, but with your own files instead.
 
 ## 💡 Learning 💡
 

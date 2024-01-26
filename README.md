@@ -19,7 +19,8 @@ Custom implementation of `printf()`.
 
 ### Using
 
-Put the sources in your project in a repository "ft_printf" and use `make -C ft_printf` in you main Makefile.
+- Put the sources in your project in a repository "ft_printf" and use `make -C ft_printf` in you main Makefile.
+- Use it as in testing mode but with your files instead.
 
 ## 💡 Learning 💡
 

@@ -1,4 +1,4 @@
 .vscode
-libftprintf.a
-*.o
-a.out
+Project/libftprintf.a
+Project/*.o
+Project/a.out

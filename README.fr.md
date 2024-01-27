@@ -10,7 +10,12 @@ Recoder `printf()`.
 ## 🚀 Utilisation 🚀
 
 ```shell
-> make
+git clone git@github.com:nfauconn/ft_printf.git
+cd Project
+make
+```
+
+```shell
 > cc main.c libftprintf.a
 > ./a.out
 ```

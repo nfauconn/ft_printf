@@ -9,8 +9,13 @@ Custom implementation of `printf()`.
 
 ## 🚀 Usage 🚀
 
+```shell
+git clone git@github.com:nfauconn/ft_printf.git
+cd Project
+make
+```
+
 ``` shell
-> make
 > cc main.c libftprintf.a
 > ./a.out
 ```

@@ -11,7 +11,7 @@ Custom implementation of `printf()`.
 
 ```shell
 git clone git@github.com:nfauconn/ft_printf.git
-cd Project
+cd ft_printf/Project
 make
 ```
 

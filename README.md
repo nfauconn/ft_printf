@@ -3,8 +3,9 @@
 
 # ft_printf
 
+Custom implementation of `printf()`. I chose to use a buffer to store the output and print it only once at the end of the program. This allows to reduce the number of `write()` calls and thus to improve the performance of the program.
 
-Custom implementation of `printf()`.
+*C Programmin Language* • *Data Structures* • *Use of Variadic Functions* • *Data Types and Conversions* • *Code Structuring and Extensibility* • *Code Optimization* • *Memory Usage* • *Function Pointers* • *Parsing* • *Error Management* • *Makefile Usage* • *Basic Git Workflow*
 
 ## Usage
 
@@ -51,23 +52,3 @@ make
 - `0` Left-pads the number with zeroes (0) instead of spaces when padding is specified (see width sub-specifier).
 - `-` Left-justify within the given field width; Right justification is the default (see width sub-specifier).
 
-
-## Skills
-
-- **Understanding of the `printf()` function:** Inner workings and versatility of the popular `printf()` function in C.
-
-- **Data Structures in C:** Manage complex data more effectively, leading to more organized and scalable code.
-
-- **Use of Variadic Functions:** Manage a function with a variable number of arguments using `va_start`, `va_arg`, `va_copy`, and `va_end`.
-
-- **Handling Various Data Types and Conversions:** Managing different data types and conversions, such as printing characters, strings, pointers, and various number formats (decimal, integer, unsigned, hexadecimal).
-
-- **Makefile Creation:** Compile source files, into the required static library
-
-- **Code Structuring and Extensibility:** Writing well-structured and extensible code, which is crucial for the maintenance and scalability of software projects.
-
-- **Code Optimization:** I decided to use a buffer to store all the output and perform a single write operation at the end, instead of making successive calls to `write()`. This reduced the overhead and improved the performance of my `ft_printf` function.
-
-- **Memory Usage:** Buffering, concatenation, memory allocation, reallocation, and freeing memory. 
-
-- **Function Pointers:** I used them in conjunction with an enumeration to call the appropriate conversion functions based on the format specifier. For example, `pf->fun_ptr[c] = &conv_c;` allowed me to map a character to a specific function, making the code modular and easy to extend.

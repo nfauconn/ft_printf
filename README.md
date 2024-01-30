@@ -3,11 +3,10 @@
 
 # ft_printf
 
-## 🏁 Goal 🏁
 
 Custom implementation of `printf()`.
 
-## 🚀 Usage 🚀
+## Usage
 
 ```shell
 git clone git@github.com:nfauconn/ft_printf.git
@@ -20,59 +19,18 @@ make
 > ./a.out
 ```
 
-## 💡 Learning 💡
+## Description
 
-### 🌐 Language: C 🌐
+**Program Name** | `libftprintf.a`
+| -- | -- |
+**Language** | C
+**Turn in Files** | `Makefile`, `*.h`, `*/.h`, `*.c`, `*/.c`
+**Makefile Rules** | `$(NAME)`, `all`, `clean`, `fclean`, `re`
+**External Functions** | `malloc`, `free`, `write`, `va_start`, `va_arg`, `va_copy`, `va_end`
 
-- **Understanding of the `printf()` function:** Inner workings and versatility of the popular `printf()` function in C.
+- The `ar` command creates the library. Using the `libtool` command was forbidden.
 
-- **Data Structures in C:** Manage complex data more effectively, leading to more organized and scalable code.
-
-- **Use of Variadic Functions:** Manage a function with a variable number of arguments using `va_start`, `va_arg`, `va_copy`, and `va_end`.
-
-- **Handling Various Data Types and Conversions:** Managing different data types and conversions, such as printing characters, strings, pointers, and various number formats (decimal, integer, unsigned, hexadecimal).
-
-### 🔧 Development Practices and Tools 🔧
-
-- **Makefile Creation:** Compile source files, into the required static library
-
-- **Code Structuring and Extensibility:** Writing well-structured and extensible code, which is crucial for the maintenance and scalability of software projects.
-
-- **Code Optimization:** I decided to use a buffer to store all the output and perform a single write operation at the end, instead of making successive calls to `write()`. This reduced the overhead and improved the performance of my `ft_printf` function.
-
-- **Memory Usage:** Buffering, concatenation, memory allocation, reallocation, and freeing memory. 
-
-- **Function Pointers:** I used them in conjunction with an enumeration to call the appropriate conversion functions based on the format specifier. For example, `pf->fun_ptr[c] = &conv_c;` allowed me to map a character to a specific function, making the code modular and easy to extend.
-
-## 📋 Subject 📋
-
-Solo project
-
-### Common Instructions
-
-- **Language:** Your project must be written in C.
-- **Norm:** Your project must adhere to the Norm. Any norm error will result in a score of 0, including in the bonus files/functions.
-- **Functionality:** Your functions should not exit unexpectedly (segmentation fault, bus error, double free, etc.), except for undefined behaviors.
-- **Memory Management:** All heap-allocated memory space must be properly freed. Memory leaks will not be tolerated.
-- **Makefile:** If required, submit a Makefile that compiles your source files to the required output with the flags `-Wall`, `-Wextra`, and `-Werror`. It must not relink.
-- **Submission:** Submit your work to your assigned git repository. Only the work in the git repository will be graded.
-
-### Mandatory Part
-
-- **Program Name:** `libftprintf.a`
-- **Turn in Files:** `Makefile`, `*.h`, `*/.h`, `*.c`, `*/.c`
-- **Makefile Rules:** `$(NAME)`, `all`, `clean`, `fclean`, `re`
-- **External Functions:** `malloc`, `free`, `write`, `va_start`, `va_arg`, `va_copy`, `va_end`
-- **Libft Authorized:** Yes
-- **Description:** Recode the `printf()` function from libc. The prototype of `ft_printf()` is `int ft_printf(const char * ...);`. Your function must handle the following conversions: `cspdiuxX%`.
-
-**Requirements:**
-
-- Compare your function against the original `printf()`.
-- Use the `ar` command to create your library. Using the `libtool` command is forbidden.
-- Your `libftprintf.a` must be created at the root of your repository.
-
-**Conversions to Implement:**
+**Conversions Implemented:**
 
 - `%c` Prints a single character.
 - `%s` Prints a string (as defined by the common C convention).
@@ -84,17 +42,32 @@ Solo project
 - `%X` Prints a number in hexadecimal (base 16) uppercase format.
 - `%%` Prints a percent sign.
 
-### Bonus Part
+**Flags Implemented:**
+- `<width>` Minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The value is not truncated even if the result is larger.
+- `.<precision>` Precision specifies the minimum number of digits to be written. If the value to be written is shorter than this number, the result is padded with leading zeros. The value is not truncated even if the result is larger.
+- ` ` (space) A blank space is left before a positive number (or empty string) produced by a signed conversion.
+- `+` A sign must always be placed before a number produced by a signed conversion.
+- `#` Used with `o`, `x`, or `X` conversions, the value is preceded with `0`, `0x`, or `0X` respectively for values different than zero.
+- `0` Left-pads the number with zeroes (0) instead of spaces when padding is specified (see width sub-specifier).
+- `-` Left-justify within the given field width; Right justification is the default (see width sub-specifier).
 
-You are not required to complete all the bonuses. However, if you plan to attempt the bonus part, consider the implementation of your extra features from the start to avoid pitfalls.
 
-**Bonus List:**
+## Skills
 
-- Manage any combination of the following flags: `' -0.'` and the field minimum width under all conversions.
-- Manage all the following flags: `'# +'` (Yes, one of them is a space).
+- **Understanding of the `printf()` function:** Inner workings and versatility of the popular `printf()` function in C.
 
-**Note:** The bonus part will only be assessed if the mandatory part is PERFECT, meaning all mandatory requirements are fully met and function without any issues.
+- **Data Structures in C:** Manage complex data more effectively, leading to more organized and scalable code.
 
-### Submission and Peer Evaluation
+- **Use of Variadic Functions:** Manage a function with a variable number of arguments using `va_start`, `va_arg`, `va_copy`, and `va_end`.
 
-Turn in your assignment in your Git repository as usual. Ensure the names of your files are correct. After passing this assignment, you can add your `ft_printf()` to your `libft` for use in future C projects. Only the work inside your repository will be evaluated during the defense.
+- **Handling Various Data Types and Conversions:** Managing different data types and conversions, such as printing characters, strings, pointers, and various number formats (decimal, integer, unsigned, hexadecimal).
+
+- **Makefile Creation:** Compile source files, into the required static library
+
+- **Code Structuring and Extensibility:** Writing well-structured and extensible code, which is crucial for the maintenance and scalability of software projects.
+
+- **Code Optimization:** I decided to use a buffer to store all the output and perform a single write operation at the end, instead of making successive calls to `write()`. This reduced the overhead and improved the performance of my `ft_printf` function.
+
+- **Memory Usage:** Buffering, concatenation, memory allocation, reallocation, and freeing memory. 
+
+- **Function Pointers:** I used them in conjunction with an enumeration to call the appropriate conversion functions based on the format specifier. For example, `pf->fun_ptr[c] = &conv_c;` allowed me to map a character to a specific function, making the code modular and easy to extend.

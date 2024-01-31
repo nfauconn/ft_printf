@@ -7,8 +7,8 @@
 
 Custom implementation of `printf()`. I chose to use a buffer to store the output and print it only once at the end of the program. This allows to reduce the number of `write()` calls and thus to improve the performance of the program.
 
-**Program Name** | `libftprintf.a`
 | -- | -- |
+**Program Name** | A static library `libftprintf.a` to link with your main (if you don't have one, I've included a `main.c` to test the program)
 **Language** | C
 **Turn in Files** | `Makefile`, `*.h`, `*/.h`, `*.c`, `*/.c`
 **Makefile Rules** | `$(NAME)`, `all`, `clean`, `fclean`, `re`

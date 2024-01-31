@@ -1,26 +1,11 @@
 [![en](https://img.shields.io/badge/lang-en-pink.svg)](https://github.com/nfauconn/ft_printf/blob/master/README.md)
 [![fr](https://img.shields.io/badge/lang-fr-purple.svg)](https://github.com/nfauconn/ft_printf/blob/master/README.fr.md)
 
+*C Programmin Language* • *Data Structures* • *Use of Variadic Functions* • *Data Types and Conversions* • *Code Structuring and Extensibility* • *Code Optimization* • *Memory Usage* • *Function Pointers* • *Parsing* • *Error Management* • *Makefile Usage* • *Basic Git Workflow*
+
 # ft_printf
 
 Custom implementation of `printf()`. I chose to use a buffer to store the output and print it only once at the end of the program. This allows to reduce the number of `write()` calls and thus to improve the performance of the program.
-
-*C Programmin Language* • *Data Structures* • *Use of Variadic Functions* • *Data Types and Conversions* • *Code Structuring and Extensibility* • *Code Optimization* • *Memory Usage* • *Function Pointers* • *Parsing* • *Error Management* • *Makefile Usage* • *Basic Git Workflow*
-
-## Usage
-
-```shell
-git clone git@github.com:nfauconn/ft_printf.git
-cd ft_printf/Project
-make
-```
-
-``` shell
-> cc main.c libftprintf.a
-> ./a.out
-```
-
-## Description
 
 **Program Name** | `libftprintf.a`
 | -- | -- |
@@ -52,3 +37,16 @@ make
 - `0` Left-pads the number with zeroes (0) instead of spaces when padding is specified (see width sub-specifier).
 - `-` Left-justify within the given field width; Right justification is the default (see width sub-specifier).
 
+
+## Usage
+
+```shell
+git clone git@github.com:nfauconn/ft_printf.git
+cd ft_printf/Project
+make
+```
+
+``` shell
+> cc main.c libftprintf.a
+> ./a.out
+```

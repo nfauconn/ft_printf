@@ -43,7 +43,7 @@ Implémentation personnalisée de `printf()`. J'ai choisi d'utiliser un buffer p
 
 ```shell
 git clone git@github.com:nfauconn/ft_printf.git
-cd ft_printf/Projet
+cd ft_printf/Project
 make
 ```
 

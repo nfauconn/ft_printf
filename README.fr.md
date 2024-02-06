@@ -14,6 +14,7 @@ Implémentation personnalisée de `printf()`. J'ai choisi d'utiliser un buffer p
 **Fichiers à rendre** | `Makefile`, `*.h`, `*.c`
 **Règles de Makefile** | `$(NAME)`, `all`, `clean`, `fclean`, `re`
 **Fonctions externes** | `malloc`, `free`, `write`, `va_start`, `va_arg`, `va_copy`, `va_end`
+**Variables globales autorisées** | Aucune
 
 - La commande `ar` crée la bibliothèque.
 

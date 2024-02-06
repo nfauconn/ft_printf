@@ -14,6 +14,7 @@ Custom implementation of `printf()`. I chose to use a buffer to store the output
 **Turn in Files** | `Makefile`, `*.h`, `*/.h`, `*.c`, `*/.c`
 **Makefile Rules** | `$(NAME)`, `all`, `clean`, `fclean`, `re`
 **External Functions** | `malloc`, `free`, `write`, `va_start`, `va_arg`, `va_copy`, `va_end`
+**Authorized Global Variables** | None
 
 - The `ar` command creates the library. Using the `libtool` command was forbidden.
 
